@@ -12,7 +12,7 @@ version: 1.0.0
 ** Technische Grundlagen
    - ( ) Grundschaltungen In der Prozessor und Speichertechnik
    - ( ) Schaltungen zur Datenübertragung
-   --- Multiplexer, Demultiplexer
+   -- Multiplexer, Demultiplexer
 ** Aktuelle PC-Hardware
    - ( ) Prozessoren
    -- Leistungsmerkmale
