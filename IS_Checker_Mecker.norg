@@ -4,7 +4,7 @@ description:
 authors: julius
 categories: 
 created: 2023-01-22
-updated: 2023-01-22
+updated: 2023-01-23
 version: 1.0.0
 @end
 
@@ -79,8 +79,8 @@ version: 1.0.0
 ** Realisierung von Netzwerken
    - ( ) Aufbau, Konfiguration, Simulation
 ** Informationssicherheit in Netzwerken
-   - ( ) RAID, Backup, Firewall, Viren
-   - ( ) Maßnahmen zur Informationssicherheit
+   - (-) RAID, Backup, Firewall, Viren
+   - (x) Maßnahmen zur Informationssicherheit
 * Lernbereich 4: IT-Projektmanagement im Unternehmen
 ** Modellierung von Prozessen im Unternehmen
    - ( ) Informationssysteme, ARIS-Modell
@@ -111,8 +111,8 @@ version: 1.0.0
    - ( ) Terminliche Planung
    - ( ) Qualitätssicherung
 ** Datenschutz und Datensicherheit
-   - ( ) Vorbeugender Schutz
-   - ( ) Gesetzliche Vorlagen
+   - (x) Vorbeugender Schutz
+   - (x) Gesetzliche Vorlagen
 * Lernbereich 6: Grundlagen der Softwareentwicklung
 ** Ablauf der Softwareentwicklung
    - ( ) Phasenmodelle

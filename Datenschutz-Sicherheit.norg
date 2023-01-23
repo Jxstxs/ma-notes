@@ -1,0 +1,83 @@
+@document.meta
+title: Datenschutz-Sicherheit
+description: 
+authors: julius
+categories: 
+created: 2023-01-23
+updated: 2023-01-23
+version: 1.0.0
+@end
+
+* Datenschutz und Datensicherheit
+** Datenschutz: Schutz personenbezogener Daten
+   Soll bei der Speicherung, Übermittlung, Veränderung, Löschung vor Missbrauch schützen
+*** Orte wo Daten gespeichert werden
+    - Schule
+    - Arbeitgeber
+    - Krankenkasse
+    - Arztpraxen
+*** personenbezogene Daten
+    - Geburtsdatum
+    - Adresse
+    - Zensuren und Bewertungen
+    - Kreditwürdigkeit
+*** Gesetze
+    - Bundesdatenschutzgesetz:
+      Regelt Informationsverarbeitung durch Behörden ,öffentliche Stellen des Bundes und Privatwirtschaft
+*** Maßnahmen
+    - Ausweis/Code Leser
+    - Lesegerät für anatomische Merkmale (Iris, Fingerabdruck)
+    - Autorisierter Benutzer Zugriff
+*** Pflichten des Unternehmens
+    - Benachrichtigungspflicht: bei erst speicherung nutzer informieren oder ist bereits im Wissen darüber
+    - Auskunftspflicht 
+    - Berichtiungspflicht
+    - Sperrpflicht
+** Datensicherheit: Schutz der Daten (Verfälschung, Vernichtung, ...)
+*** Anforderungen und mögliche Sicherungsmaßnahmen
+    - Zugangskontrolle
+    - Datenträgerkontrolle
+    - Speicherkontrolle
+    - Eingabekontrolle
+**** Erfassung
+    - Prüfzifferverfahren
+    - Plausibilitätskontrolle 
+**** Übertragung
+    - Prüfbitverfahren
+**** unbeabsichtigter Verlust
+    - Generationsprinzip
+    - Backup Daten
+    - Aufbewahrungstrennung
+    - Rechnerausfall (EDV/USV Anlage => Stromversorgung)
+**** Mechanismen
+    - Verschlüsselung
+    - Laufnummern
+    - Kompression
+    - Authentifikation
+**** Viren
+    - Infiziert andere Programme um schädlichen Code auszuführen (Wurm)
+    - Trojanisches Pferd (Backdoor)
+    - Spyware: greift Daten ab und agiert im Hintergrund
+***** Typen
+    - Programm: infizieren Programmdateien 
+    -- residente: nur während laufzeit des Programmes
+    -- speicherresidente: infizieren Hauptspeicher
+    - Compagnon: erstellen neue Virenprogramme
+    - Boot: werden im Boot Vorgang geladen (dort gespeichert)
+    - Masterboot: verschieben den Masterbootrecord
+    - Hybrid: Infizieren alles
+    - Makro: meist in Officeprogrammen => Visual Basic
+    - Link: Partitionstabelle wird umgeschrieben => erst virus dann daten
+    - logische Bomben: führen normalen Code schadhaft aus => zip bombe
+    - Slow: bleiben erst im hintergrund => erst nur minimaler schaden
+    - Retro: löschen Antiviren-Programm Daten
+    - Stealth: manipulieren Systemprogramme
+***** Programme
+****** Vorraussetzungen
+    - regelmäßige Datenbank aktualisierung
+    - überprüfen von Emails, Datein, Laufwerken, Hauptspeicher
+**** Firewall
+    - Rechner der lokale Netzwerke vor unbefugten Zugriff schützt
+    - steht zwischen lokalem und öffentlichem Netz
+    - besteht aus Hard und Software
+    
