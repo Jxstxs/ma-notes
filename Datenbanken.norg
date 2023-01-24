@@ -41,6 +41,45 @@ version: 1.0.0
 *** externes Schema/Datensicht
     - Benutzersicht
     - durch unterschiedliche Anwender unterschiedliche Daten
+** Entwurf von Datenbanken
+   Modellierung auf konzeptioneller Ebene und Optimierung der Datenstruktur
+
+   - Realitätsausschnitt: externes Schema (Abstraktion)
+   - Datenmodell: konzeptionelle Schema (Spezifikation)
+   - Implementation: internes Schema (=> Datenbasis)
+** Modellierung
+*** Entity-Relationship-Modell
+    - Ziel: Darstellung von Daten und Beziehungen => konzeptionelle Ebene
+    - Besteht aus:
+    -- Entität(Rechteck): realer Gegenstand => Kunde, Artikel, ...
+    -- Beziehung(Raute): Form der Beziehung => Kunde *kauft* Artikel, ...
+    -- Attribute(Ellipse): Eigenschaften => Name, Adresse, Preis, Stückzahl, ...
+**** Kardinalitäten
+     - 1:1 => Mann(1)-verheiratet-(1)Frau
+     - 1:c => Kunde(1)bekommt(c)Rabatt
+     -- ein Kunde bekommt keinen/einen Rabatt
+     - 1:n => Kunde(1)erteilt(n)Auftrag
+     - m:n => Mitarbeit(m)fährt(n)Firmenauto
+     -- Beziehung wird selbst zur Relation mit jeweiligen Primärschlüsseln
+*** Relationen-Modell
+    - Tabelle bestehend aus einer Spalte => Entität (Tabellenkopf)
+    - Attribute in den Zeilen
+** Normalisierung
+*** Ziele
+    - Flexible, Stabile Datenbank => leichte Pflege
+    - Verhindern von Anomalien
+    -- Ändern: unterschiedliche Werte durch mehrere Attribute mit selben "Sinn"
+    -- Löschen: Überreste Gelöschter Daten durch Redundanz
+    -- Einfügen: nicht alle Attribute mit selben "Sinn" werden gleich Beschrieben(Daten eingefügt)
+    - geringe Redundanz => geringer Speicherbedarf
+    - leichte Erweiterungen
+** ACID
+   Voraussetzung für Verlässliche Systeme
+*** Atomrarität (Abgeschlossenheit)
+    - entweder volle Ausführung oder gar keine => Transaktionen
+    -- DBMS sieht Transaktion als elementar Operation => ununterbrochen
+    -- erst "gültig" wenn fehlerfrei und komplett abgeschlossen
+       /* NOTE: hier */
 ** Datenmodelle
    legt die Struktur der zu speichernden Daten und deren Operatoren fest (löschen, ändern, ...)
 *** hierarchisches
@@ -100,3 +139,7 @@ SELECT * FROM Personen WHERE Personen.ID NOT IN (SELECT ID FROM Kunde);
   @end
 
   -- Kartesisches Produkt (Durchschnittsmenge): Enthält Spalten beider Relationen
+
+@code sql
+SELECT * FROM Personen, Abteilung WHERE Personen.ID = Abteilung.ID;
+  @end
