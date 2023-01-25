@@ -4,7 +4,7 @@ description:
 authors: julius
 categories: 
 created: 2023-01-22
-updated: 2023-01-24
+updated: 2023-01-25
 version: 1.0.0
 @end
 
@@ -54,7 +54,7 @@ version: 1.0.0
    - ( ) ERD, ER Modell
    - ( ) Normalformen
 ** SQL
-   - ( ) DQL: Projektion, Selektion, Verbunf, Auswahlabfragen, Berechnung, Gruppierung, Sortierung, Formatierung
+   - ( ) DQL: Projektion, Selektion, Verbund, Auswahlabfragen, Berechnung, Gruppierung, Sortierung, Formatierung
    - ( ) DDL: Tabellenstrukturen anlegen und verändern
    - ( ) DML: Werte einfügen, aktualisieren, archivieren, löschen
 ** Administration der Datenbasis
