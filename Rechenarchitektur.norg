@@ -84,7 +84,7 @@ version: 1.0.0
    Steuern Vorgänge
 *** Mikrocontroller
     übernimmt Steueraufgaben => wird als vollständiger Computer angesehen
-    nach Havard-Architektur Aufgebaut
+    nach Havard-Architektur Aufgebaut und nutzt meist RISC
 ** Unterschiede
 *** Prozessor
     - Datenverarbeitung
@@ -94,5 +94,47 @@ version: 1.0.0
     - hohe IO-Kapazität
 * Instruction sets
 ** RISC: Reduced Instruction Set Computer
+*** Vorteile
+    - unkompliziertes Chip Design
+    - gleiche Opcode Länge
+    - Mehr Register
+    - Hardwareverdrahtung (kein Interpreter benötigt)
 ** CISC: Complex Instruction Set Computer
+   - Nutzt Interpreter für höhere Effizienz
 ** Opcode: Länge an Bits die für befehle zur Verfügung stehen
+*** variable Opcode Länge
+    - Befehl mit ?variablen Parametern?
+*** Mikroops: Wenn Komplexe befehle zu Einfachen aufgeteilt werden
+* Bussystem
+  - Transportiert Daten und Strom
+  - können parallel sowie seriell (aktuelle)
+** Arten
+*** intern
+    - schließt innere Komponenten an (CPU, ...)
+*** extern
+    - schließt externe Komponenten an (USB, ...)
+* Speichersysteme
+  Dient der Speicherung von Daten bzw Informationen
+** nicht Technisch
+   - Papier, ...
+** Technisch
+   - Fotografisch: chemische Lichtbilder
+   - Mechanisch: physisch Beschrieben
+   -- Mechanischer, Optischer Lesevorgang
+   - Halbleiter technisch: elektrische Bestandteile
+   -- flüchtig: Informationen gehen Verloren wenn sie nicht "Aufgefrischt" werden
+   --- RAM
+   -- permanent: Informationen bleiben bestehen (unveränderbar)
+   --- ROM
+   -- semi-permanent: Informationen bleiben bestehen (schreibbar)
+   --- EPROM
+   - Elektronisch
+   - Magnetisch
+   - Optisch
+   - Magneto-Optisch
+* Interrupt system
+  - IRQ wird ausgelöst
+  - "context switch"
+  - IRQ wird aufgehoben
+  - Fortsetzten
+
