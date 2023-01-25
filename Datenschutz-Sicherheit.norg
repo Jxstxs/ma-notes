@@ -4,7 +4,7 @@ description:
 authors: julius
 categories: 
 created: 2023-01-23
-updated: 2023-01-23
+updated: 2023-01-25
 version: 1.0.0
 @end
 
@@ -80,3 +80,8 @@ version: 1.0.0
     - Rechner der lokale Netzwerke vor unbefugten Zugriff schützt
     - steht zwischen lokalem und öffentlichem Netz
     - besteht aus Hard und Software
+** Lizenzen
+   - Maßnahmen, die gewährleisten, dass das Urheberrecht geschützt wird
+*** Beispiele
+    - MIT
+    - uni-oldenburg.de
