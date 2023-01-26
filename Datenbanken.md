@@ -99,6 +99,25 @@ Modellierung auf konzeptioneller Ebene und Optimierung der Datenstruktur
 - geringe Redundanz => geringer Speicherbedarf
 - leichte Erweiterungen
 
+### 1. NF
+
+Alle Attribut Werte müssen atomar und es dürfen keine Wiederholungsgruppen vorhanden sein
+- Attribut Werte in kleinst mögliche sinnvolle Elemente zerlegen
+- Redundanzen auslagern und mit Primkeys versehen
+
+### 2. NF
+
+- Bedingungen der 1 NF
+
+Jedes nicht Schlüsselattribut muss voll Funktions abhängig vom Gesamtschlüssel, aber nicht von Teilen des Gesamtschlüssels sein
+
+### 3. NF
+
+- Bedingungen der 1 und 2 NF
+
+Es dürfen keine funktionalen Abhängigkeiten zwischen Attributen existieren, die nicht als Schlüssel definiert sind
+Es dürfen **keine** indirekten (transitiven) Abhängigkeiten bestehen
+
 ## ACID
 
 Voraussetzung für Verlässliche Systeme
@@ -120,6 +139,7 @@ Voraussetzung für Verlässliche Systeme
         - Bereichsintegrität: jeder Wert muss in einem Wertebereich liegen
         - Entitäts Integrität: Primkey muss eindeutig und nicht null sein
         - Referentielle Integrität: Fremdschlüssel muss entweder null oder ein existierender sein
+        - logische Konsistenz: zusätzliche Integritätsbedingungen vom Benutzer festgelegt => selbst Verwaltung
     - Schlüssel
 
 ### Isolation (Abgrenzung)
