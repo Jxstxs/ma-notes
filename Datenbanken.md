@@ -108,7 +108,28 @@ Voraussetzung für Verlässliche Systeme
 - entweder volle Ausführung oder gar keine => Transaktionen
     - DBMS sieht Transaktion als elementar Operation => ununterbrochen
     - erst "gültig" wenn fehlerfrei und komplett abgeschlossen
-      _* NOTE: hier *_
+        - wenn Fehler => Rollback zur letzten fehlerfreien Aktion
+
+### Konsistenz Erhaltung
+
+- Sequenz von Operationen hinterlassen konsistenten Datenbestand
+- Konsistenz wird erreicht durch
+    - Normalisierung
+    - Integritätsbedingungen
+        - besonders: inhaltliche und referentielle
+        - Bereichsintegrität: jeder Wert muss in einem Wertebereich liegen
+        - Entitäts Integrität: Primkey muss eindeutig und nicht null sein
+        - Referentielle Integrität: Fremdschlüssel muss entweder null oder ein existierender sein
+    - Schlüssel
+
+### Isolation (Abgrenzung)
+
+- parallel laufende Operationen dürfen sich nicht gegenseitig beeinflussen
+
+### Dauerhaftigkeit
+
+- garantiert das Daten nach Operation dauerhaft im Datenbestand bestehen
+- Transaktionlog: speichert alle schreib Transaktionen um diese zu reproduzieren
 
 ## Datenmodelle
 
